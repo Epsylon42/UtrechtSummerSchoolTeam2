@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageWhenTouching : MonoBehaviour
+public class DamageWhileTouching : MonoBehaviour
 {
     public bool DamagePlayer;
 

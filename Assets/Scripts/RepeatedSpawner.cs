@@ -27,8 +27,7 @@ public class RepeatedSpawner : MonoBehaviour
             var posOffset = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * distance;
 
             var obj = Instantiate(Prefab, tf.position + posOffset, tf.rotation);
-            var move = obj.GetComponent<MoveTowardsPlayer>();
-            move.Player = Player;
+            obj.GetComponent<Targeting>().Target = Player;
         }
         spawnerCharge -= toSpawn;
     }

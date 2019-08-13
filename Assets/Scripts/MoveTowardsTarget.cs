@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveTowardsPlayer : MonoBehaviour
+public class MoveTowardsTarget : MonoBehaviour
 {
     public float Speed;
-    public GameObject Player;
 
     private Rigidbody body;
 
@@ -18,8 +17,13 @@ public class MoveTowardsPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var directionToPlayer = Player.GetComponent<Transform>().position - GetComponent<Transform>().position;
-        var velocity = directionToPlayer.normalized * Speed;
+        var directionToTarget =
+            GetComponent<Targeting>()
+            .Target
+            .GetComponent<Transform>()
+            .position - GetComponent<Transform>().position;
+
+        var velocity = directionToTarget.normalized * Speed;
         body.velocity = velocity;
     }
 }
