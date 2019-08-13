@@ -8,7 +8,7 @@ public class DamageWhileTouching : MonoBehaviour
 
     public float DamagePerSecond;
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (DamagePlayer)
         {

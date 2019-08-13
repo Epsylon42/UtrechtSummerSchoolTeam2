@@ -15,17 +15,11 @@ public class RotateToFaceTarget : MonoBehaviour
             .GetComponent<Transform>()
             .position;
 
-        var body = GetComponent<Rigidbody>();
+        var body = GetComponent<Rigidbody2D>();
         var tf = GetComponent<Transform>();
 
-        var angleDiff = Vector3.SignedAngle(
-            tf.forward,
-            targetPos - tf.position,
-            Vector3.up
-            );
+        var angleDiff = Vector2.SignedAngle(tf.right, targetPos - tf.position);
 
-        var angularVelocity = body.angularVelocity;
-        angularVelocity.y = Mathf.Sign(angleDiff) * Mathf.Lerp(0, MaxAngularVelocity, Mathf.Abs(angleDiff));
-        body.angularVelocity = angularVelocity;
+        body.angularVelocity = Mathf.Sign(angleDiff) * Mathf.Lerp(0, MaxAngularVelocity, Mathf.Abs(angleDiff) / 180);
     }
 }

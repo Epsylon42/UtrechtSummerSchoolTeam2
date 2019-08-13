@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1712f2b35a6d4d0aadccd7fa9b9a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemiesPerSecond: 1
+  EnemiesPerSecond: 3
   SpawnDistanceRange: {x: 0, y: 1}
   Prefab: {fileID: 5349855713988088666, guid: f370b4c076a2281f8bf87705dec04c76, type: 3}
   Player: {fileID: 0}
