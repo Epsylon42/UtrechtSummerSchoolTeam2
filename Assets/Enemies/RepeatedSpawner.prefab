@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemiesPerSecond: 1
+  SpawnDistanceRange: {x: 0, y: 1}
   Prefab: {fileID: 5349855713988088666, guid: f370b4c076a2281f8bf87705dec04c76, type: 3}
   Player: {fileID: 0}
