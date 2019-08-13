@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5349855713988088664}
   - component: {fileID: 5349855713988088667}
   - component: {fileID: -8481590881490018234}
+  - component: {fileID: -2147794012935627092}
   m_Layer: 0
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5349855713988088666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4680004, y: 0.9929457, z: -0.9977441}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -130,7 +131,8 @@ RotationConstraint:
   m_IsContraintActive: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 5349855713988088642}
+  - sourceTransform: {fileID: 2093272195666477472, guid: 932278f0ed3448e27accebd4fdeab05b,
+      type: 3}
     weight: 1
 --- !u!1818360608 &5349855713988088664
 PositionConstraint:
@@ -141,15 +143,16 @@ PositionConstraint:
   m_GameObject: {fileID: 5349855713988088666}
   m_Enabled: 1
   m_Weight: 1
-  m_TranslationAtRest: {x: 0.4680004, y: 0.9929457, z: -0.9977441}
+  m_TranslationAtRest: {x: 0, y: 0, z: 0}
   m_TranslationOffset: {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 0
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 0
   m_IsContraintActive: 1
-  m_IsLocked: 1
+  m_IsLocked: 0
   m_Sources:
-  - sourceTransform: {fileID: 5349855713988088642}
+  - sourceTransform: {fileID: 2093272195666477472, guid: 932278f0ed3448e27accebd4fdeab05b,
+      type: 3}
     weight: 1
 --- !u!114 &5349855713988088667
 MonoBehaviour:
@@ -178,3 +181,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 10
+--- !u!114 &-2147794012935627092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5349855713988088666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e42bc9e4d20a9f88eaeb63a883ed5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamagePlayer: 1
+  DamagePerSecond: 5

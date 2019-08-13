@@ -9,18 +9,18 @@ public class Health : MonoBehaviour
 
     public System.Action OnHealthBelowZero;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Damage(float damage)
     {
-        CurrentHealth = MaxHealth;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        CurrentHealth -= damage;
         if (CurrentHealth <= 0 && OnHealthBelowZero != null)
         {
             OnHealthBelowZero.Invoke();
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        CurrentHealth = MaxHealth;
     }
 }
