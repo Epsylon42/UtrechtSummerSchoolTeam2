@@ -24,7 +24,7 @@ public class RepeatedSpawner : MonoBehaviour
         {
             var distance = Random.Range(SpawnDistanceRange.x, SpawnDistanceRange.y);
             var angle = Random.Range(0, 2 * Mathf.PI);
-            var posOffset = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * distance;
+            Vector3 posOffset = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * distance;
 
             var obj = Instantiate(Prefab, tf.position + posOffset, tf.rotation);
             obj.GetComponent<Targeting>().Target = Player;
