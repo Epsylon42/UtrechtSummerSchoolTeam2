@@ -176,5 +176,5 @@ MonoBehaviour:
     type: 3}
   ProjectileDamage: 20
   ProjectileSpeed: 30
-  ProjectilesPerSecond: 3
-  ProjectileSpawnDistance: 1.5
+  ProjectilesPerSecond: 5
+  ProjectileSpawnDistance: 1

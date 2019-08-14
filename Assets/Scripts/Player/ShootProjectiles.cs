@@ -19,7 +19,8 @@ public class ShootProjectiles : MonoBehaviour
             if (cooldown <= 0)
             {
                 cooldown = 1.0f / ProjectilesPerSecond;
-                var mouseInWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                var mouseInWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition + new Vector3(0, 0, Mathf.Abs(Camera.main.transform.position.z)));
+                Debug.Log(mouseInWorld);
                 var tf = GetComponent<Transform>();
                 var direction = mouseInWorld - tf.position;
                 direction.Normalize();

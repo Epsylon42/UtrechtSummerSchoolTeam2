@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 26970386858086560}
   - component: {fileID: 4363054031524108879}
   - component: {fileID: 983048002243283688}
+  - component: {fileID: 9157769220356556160}
   m_Layer: 0
   m_Name: RegularBullet
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4e8733890d78d2c938e5fc56ac937d28, type: 2}
+  - {fileID: 2100000, guid: f1d75ef43dcfc9e488cebb11847b76aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,3 +134,16 @@ MonoBehaviour:
   DamageEnemies: 1
   NumberOfBounces: 0
   Damage: 20
+--- !u!114 &9157769220356556160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945588280055942024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96db3e232d0549711916fe2dfcfa4b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeLeft: 10
