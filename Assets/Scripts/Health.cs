@@ -6,15 +6,23 @@ public class Health : MonoBehaviour
 {
     public float MaxHealth;
     public float CurrentHealth { get; private set; }
+    public bool DestroySelfWhenBelowZero;
 
     public System.Action OnHealthBelowZero;
 
     public void Damage(float damage)
     {
         CurrentHealth -= damage;
-        if (CurrentHealth <= 0 && OnHealthBelowZero != null)
+        if (CurrentHealth <= 0)
         {
-            OnHealthBelowZero.Invoke();
+            if (DestroySelfWhenBelowZero)
+            {
+                Destroy(gameObject);
+            }
+            if (OnHealthBelowZero != null)
+            {
+                OnHealthBelowZero.Invoke();
+            }
         }
     }
 

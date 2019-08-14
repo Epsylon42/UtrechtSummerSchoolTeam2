@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4661015871930983676}
   - component: {fileID: -3581099503724416725}
   - component: {fileID: -4732421439345118132}
+  - component: {fileID: -8201743157565863713}
   m_Layer: 0
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 10
+  DestroySelfWhenBelowZero: 1
 --- !u!114 &-2147794012935627092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,3 +186,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-8201743157565863713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5349855713988088666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6791a107433dc74b4738b0a4058c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

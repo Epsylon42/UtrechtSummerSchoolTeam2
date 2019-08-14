@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8839039436292317609}
   - component: {fileID: 3836930453707726064}
   - component: {fileID: -4226168641711683125}
+  - component: {fileID: -9074629231285367406}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d874633b0371f42ce9e7967cf36b6a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 3
 --- !u!50 &8839039436292317608
 Rigidbody2D:
   serializedVersion: 4
@@ -146,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  DestroySelfWhenBelowZero: 0
 --- !u!114 &-4226168641711683125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,3 +160,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3d31d91a003706aaa1f958877ff0a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-9074629231285367406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8839039436292317610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9740a538e5ca4ebb3118500c5f9669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 945588280055942024, guid: f6e4d4c7783ce3f10a469bca95e745a5,
+    type: 3}
+  ProjectileDamage: 20
+  ProjectileSpeed: 30
+  ProjectilesPerSecond: 3
+  ProjectileSpawnDistance: 1.5

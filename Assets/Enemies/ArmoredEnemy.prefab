@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  DestroySelfWhenBelowZero: 0
 --- !u!61 &8283075488677558926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,6 +167,8 @@ GameObject:
   - component: {fileID: -9051826705053668030}
   - component: {fileID: 2344729785096544297}
   - component: {fileID: 3228548727233991709}
+  - component: {fileID: -1759991481669556364}
+  - component: {fileID: 90996146990880878}
   m_Layer: 0
   m_Name: ArmoredEnemy
   m_TagString: Untagged
@@ -335,3 +338,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-1759991481669556364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8085677959138146936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6791a107433dc74b4738b0a4058c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &90996146990880878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8085677959138146936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47ad9b4833febc513be3cace11842c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
