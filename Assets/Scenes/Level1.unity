@@ -501,8 +501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0edee44223981eaf69271f471b5b57a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RandomDasherSpawner: {fileID: 0}
-  RushSpawner: {fileID: 0}
+  RandomDasherSpawner_: {fileID: 1817717301}
+  RushSpawner_: {fileID: 881848986}
   BossSpawner: {fileID: 1211600424}
   LightSource: {fileID: 1458824937}
   Player: {fileID: 135886088}
@@ -590,6 +590,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f56a9acc88358ea1ca4223f6ef266862, type: 3}
+--- !u!1 &881848986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3579156613773756380, guid: 3b109c52f678bdc6386dcd54d5ced7b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 940625866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &940625866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -681,7 +687,7 @@ PrefabInstance:
     - target: {fileID: 3579156613773756381, guid: 3b109c52f678bdc6386dcd54d5ced7b9,
         type: 3}
       propertyPath: SpawnDistanceRange.y
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b109c52f678bdc6386dcd54d5ced7b9, type: 3}
@@ -1029,6 +1035,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1817717301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3579156613773756380, guid: 3b109c52f678bdc6386dcd54d5ced7b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 476158621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1911378412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8839039436292317613, guid: 69950fdc0bb3b41ff8c0d43fc79c9e2c,
