@@ -377,6 +377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RushSpawner_: {fileID: 5391500635121453396}
+  RushEnemyPrefab: {fileID: 5374624798334744560, guid: 92c674857b394e24b9f0165ab97af13f,
+    type: 3}
 --- !u!1001 &8897356639708679816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -479,6 +481,12 @@ PrefabInstance:
       propertyPath: EnemiesPerSecond
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3579156613773756381, guid: 3b109c52f678bdc6386dcd54d5ced7b9,
+        type: 3}
+      propertyPath: Prefab
+      value: 
+      objectReference: {fileID: 440547415614909028, guid: 16bbc52ae5374bbc99b44a6beb405bf4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b109c52f678bdc6386dcd54d5ced7b9, type: 3}
 --- !u!1 &5391500635121453396 stripped
