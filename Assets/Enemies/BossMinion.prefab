@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8699678323977932561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5374624798334744560, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_Name
+      value: BossMinion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.978996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.0381155
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8993082761823225315, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -431456323842979825, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -431456323842979825, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: TrajectoryUpdateInterval
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720846757208601355, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 3.1e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720846757208601355, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720846757208601355, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720846757208601355, guid: 92c674857b394e24b9f0165ab97af13f,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92c674857b394e24b9f0165ab97af13f, type: 3}

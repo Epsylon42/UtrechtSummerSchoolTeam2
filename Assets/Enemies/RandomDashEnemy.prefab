@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -1632323266320886708}
   - component: {fileID: 3972761274309291037}
   - component: {fileID: 9157080820908353769}
+  - component: {fileID: 2356380426003105102}
   m_Layer: 0
   m_Name: RandomDashEnemy
   m_TagString: Untagged
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 39
   DestroySelfWhenBelowZero: 1
+  HitSound: {fileID: 0}
 --- !u!114 &-1908101427542095795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +142,7 @@ MonoBehaviour:
   DashDistanceRange: {x: 5, y: 20}
   DashSpeedRange: {x: 5, y: 30}
   IntervalBetweenDashes: 0.5
+  TargetDirectionWeight: 0.5
 --- !u!50 &3972761274309291037
 Rigidbody2D:
   serializedVersion: 4
@@ -177,6 +180,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &2356380426003105102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4816003236530740751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42819e87c8058138a5aa996002d38f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
 --- !u!1001 &6738327248874949765
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -74,6 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 10
   DestroySelfWhenBelowZero: 1
+  HitSound: {fileID: 0}
 --- !u!114 &-6939253826069311440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2491a39312b1e30f9af4447a17867d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 10
+  TrajectoryUpdateInterval: 1
 --- !u!114 &-6768084235913280217
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   DestroySelfWhenBelowZero: 0
+  HitSound: {fileID: 0}
 --- !u!61 &5914574336779163157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -280,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1
+  TrajectoryUpdateInterval: 0
 --- !u!114 &2487918641755079129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RushSpawner_: {fileID: 5391500635121453396}
-  RushEnemyPrefab: {fileID: 5374624798334744560, guid: 92c674857b394e24b9f0165ab97af13f,
+  RushEnemyPrefab: {fileID: 3615818277745440993, guid: f173425b340ccc051903019de10476f0,
     type: 3}
 --- !u!1001 &8897356639708679816
 PrefabInstance:

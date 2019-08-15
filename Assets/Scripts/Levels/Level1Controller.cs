@@ -62,7 +62,7 @@ public class Level1Controller : MonoBehaviour
                     LightSource.GetComponent<Light>().intensity /= 3;
 
                     RandomDasherSpawner.Enabled = false;
-                    RushSpawner.EnemiesPerSecond = 3;
+                    RushSpawner.EnemiesPerSecond = 2;
                     Music.GetComponent<Level1Music>().PlayLevelMusic();
                     Advance();
                 }
