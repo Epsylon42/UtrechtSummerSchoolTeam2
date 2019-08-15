@@ -10,6 +10,8 @@ public class ShootProjectiles : MonoBehaviour
     public float ProjectilesPerSecond;
     public float ProjectileSpawnDistance;
 
+    public AudioClip ShotSound;
+
     private float cooldown;
 
     void Update()
@@ -20,7 +22,6 @@ public class ShootProjectiles : MonoBehaviour
             {
                 cooldown = 1.0f / ProjectilesPerSecond;
                 var mouseInWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition + new Vector3(0, 0, Mathf.Abs(Camera.main.transform.position.z)));
-                Debug.Log(mouseInWorld);
                 var tf = GetComponent<Transform>();
                 var direction = mouseInWorld - tf.position;
                 direction.Normalize();
@@ -37,6 +38,8 @@ public class ShootProjectiles : MonoBehaviour
                 damage.NumberOfBounces = 0;
 
                 projectile.GetComponent<Rigidbody2D>().velocity = direction * ProjectileSpeed;
+
+                GetComponent<AudioSource>()?.PlayOneShot(ShotSound);
             }
         }
 
