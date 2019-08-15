@@ -15,13 +15,13 @@ public class Health : MonoBehaviour
         CurrentHealth -= damage;
         if (CurrentHealth <= 0)
         {
-            if (DestroySelfWhenBelowZero)
-            {
-                Destroy(gameObject);
-            }
             if (OnHealthBelowZero != null)
             {
                 OnHealthBelowZero.Invoke();
+            }
+            if (DestroySelfWhenBelowZero)
+            {
+                Destroy(gameObject);
             }
         }
     }

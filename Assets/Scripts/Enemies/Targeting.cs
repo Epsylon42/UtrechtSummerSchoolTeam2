@@ -5,4 +5,9 @@ using UnityEngine;
 public class Targeting : MonoBehaviour
 {
     public GameObject Target;
+
+    public void SetTarget(GameObject target)
+    {
+        Target = target;
+    }
 }
