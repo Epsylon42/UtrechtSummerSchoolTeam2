@@ -30,6 +30,8 @@ public class Level1Controller : MonoBehaviour
         Music.GetComponent<Level1Music>().PlayTutorialMusic();
         RandomDasherSpawner = RandomDasherSpawner_.GetComponent<RepeatedSpawner>();
         RushSpawner = RushSpawner_.GetComponent<RepeatedSpawner>();
+        RandomDasherSpawner.Player = Player;
+        RushSpawner.Player = Player;
     }
 
     void Update()
