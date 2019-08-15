@@ -142,7 +142,7 @@ MonoBehaviour:
   DashDistanceRange: {x: 5, y: 20}
   DashSpeedRange: {x: 5, y: 30}
   IntervalBetweenDashes: 0.5
-  TargetDirectionWeight: 0.5
+  TargetDirectionWeight: 0.1
 --- !u!50 &3972761274309291037
 Rigidbody2D:
   serializedVersion: 4

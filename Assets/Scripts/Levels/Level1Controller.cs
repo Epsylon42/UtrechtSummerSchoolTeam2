@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Level1Controller : MonoBehaviour
 {
-    public GameObject RandomDasherSpawner_;
-    public GameObject RushSpawner_;
+    public List<GameObject> RandomDasherSpawners;
+    public List<GameObject> RushSpawners;
     public GameObject BossSpawner;
     public GameObject LightSource;
     public GameObject Player;
@@ -16,22 +16,44 @@ public class Level1Controller : MonoBehaviour
     private float timeElapsed = 0;
     private float stage = 0;
 
-    private RepeatedSpawner RandomDasherSpawner;
-    private RepeatedSpawner RushSpawner;
-
     private void Advance()
     {
         stage += 1;
         timeElapsed = 0;
     }
 
+    private void ConfigRushSpawners(bool enabled, float enemiesPerSecond = 0)
+    {
+        foreach (var spawner in RushSpawners)
+        {
+            var spawn = spawner.GetComponent<RepeatedSpawner>();
+            spawn.EnemiesPerSecond = enemiesPerSecond / RushSpawners.Count;
+            spawn.Enabled = enabled;
+        }
+    }
+
+    private void ConfigDasherSpawners(bool enabled, float enemiesPerSecond = 0)
+    {
+        foreach (var spawner in RandomDasherSpawners)
+        {
+            var spawn = spawner.GetComponent<RepeatedSpawner>();
+            spawn.EnemiesPerSecond = enemiesPerSecond / RandomDasherSpawners.Count;
+            spawn.Enabled = enabled;
+        }
+    }
+
     void Start()
     {
         Music.GetComponent<Level1Music>().PlayTutorialMusic();
-        RandomDasherSpawner = RandomDasherSpawner_.GetComponent<RepeatedSpawner>();
-        RushSpawner = RushSpawner_.GetComponent<RepeatedSpawner>();
-        RandomDasherSpawner.Player = Player;
-        RushSpawner.Player = Player;
+
+        var spawners = new List<GameObject>();
+        spawners.AddRange(RandomDasherSpawners);
+        spawners.AddRange(RushSpawners);
+
+        foreach (var spawner in spawners)
+        {
+            spawner.GetComponent<RepeatedSpawner>().Player = Player;
+        }
     }
 
     void Update()
@@ -41,17 +63,16 @@ public class Level1Controller : MonoBehaviour
         switch (stage)
         {
             case 0:
-                RandomDasherSpawner.Enabled = false;
-                RushSpawner.EnemiesPerSecond = 0.5f;
+                ConfigDasherSpawners(false);
+                ConfigRushSpawners(true, 0.5f);
                 Advance();
                 break;
 
             case 1:
                 if (timeElapsed > 10)
                 {
-                    RushSpawner.EnemiesPerSecond = 1;
-                    RandomDasherSpawner.Enabled = true;
-                    RandomDasherSpawner.EnemiesPerSecond = 0.5f;
+                    ConfigDasherSpawners(true, 0.5f);
+                    ConfigRushSpawners(true, 1);
                     Advance();
                 }
                 break;
@@ -61,8 +82,8 @@ public class Level1Controller : MonoBehaviour
                 {
                     LightSource.GetComponent<Light>().intensity /= 3;
 
-                    RandomDasherSpawner.Enabled = false;
-                    RushSpawner.EnemiesPerSecond = 2;
+                    ConfigDasherSpawners(false);
+                    ConfigRushSpawners(true, 2);
                     Music.GetComponent<Level1Music>().PlayLevelMusic();
                     Advance();
                 }
@@ -71,9 +92,8 @@ public class Level1Controller : MonoBehaviour
             case 3:
                 if (timeElapsed > 20)
                 {
-                    RandomDasherSpawner.Enabled = true;
-                    RandomDasherSpawner.EnemiesPerSecond = 2;
-                    RushSpawner.EnemiesPerSecond = 1;
+                    ConfigDasherSpawners(true, 2);
+                    ConfigRushSpawners(true, 1);
                     Advance();
                 }
                 break;
@@ -81,8 +101,8 @@ public class Level1Controller : MonoBehaviour
             case 4:
                 if (timeElapsed > 20)
                 {
-                    RandomDasherSpawner.Enabled = false;
-                    RushSpawner.Enabled = false;
+                    ConfigDasherSpawners(false);
+                    ConfigRushSpawners(false);
                     Music.GetComponent<Level1Music>().SetVolume(0.3f);
                     Advance();
                 }
@@ -91,8 +111,8 @@ public class Level1Controller : MonoBehaviour
             case 5:
                 if (timeElapsed > 10)
                 {
-                    RandomDasherSpawner.Enabled = false;
-                    RushSpawner.Enabled = false;
+                    ConfigDasherSpawners(true, 1);
+
                     Music.GetComponent<Level1Music>().PlayBossMusic();
                     Music.GetComponent<Level1Music>().SetVolume(1);
 
