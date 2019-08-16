@@ -9,13 +9,17 @@ public class Health : MonoBehaviour
     public bool DestroySelfWhenBelowZero;
     public AudioClip HitSound;
 
+    public GameObject AudioPlayerPrefab;
+    private GameObject audioSource;
+
     public System.Action OnHealthBelowZero;
 
     public void Damage(float damage)
     {
-        if (HitSound != null)
+        if (HitSound != null && AudioPlayerPrefab != null && audioSource == null)
         {
-            GetComponent<AudioSource>().PlayOneShot(HitSound);
+            audioSource = Instantiate(AudioPlayerPrefab);
+            audioSource.GetComponent<AudioSource>().PlayOneShot(HitSound);
         }
 
         CurrentHealth -= damage;

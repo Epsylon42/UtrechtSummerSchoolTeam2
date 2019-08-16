@@ -74,7 +74,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 10
   DestroySelfWhenBelowZero: 1
-  HitSound: {fileID: 0}
+  HitSound: {fileID: 8300000, guid: b407b11420329cc4dbb66f8c7efd7682, type: 3}
+  AudioPlayerPrefab: {fileID: 15029388523139994, guid: 1e75256cda3e364f793f55c7e163c61a,
+    type: 3}
 --- !u!114 &-6939253826069311440
 MonoBehaviour:
   m_ObjectHideFlags: 0

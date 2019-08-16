@@ -232,7 +232,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   DestroySelfWhenBelowZero: 1
-  HitSound: {fileID: 0}
+  HitSound: {fileID: 8300000, guid: 1845a8e33e6fd624fbf802cedbe08a26, type: 3}
+  AudioPlayerPrefab: {fileID: 15029388523139994, guid: 1e75256cda3e364f793f55c7e163c61a,
+    type: 3}
 --- !u!58 &1623865399997657064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -270,6 +272,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8049820856625767812}
     m_Modifications:
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_Name
+      value: robotSphere
+      objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -325,10 +331,6 @@ PrefabInstance:
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.z
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
-      propertyPath: m_Name
-      value: robotSphere
       objectReference: {fileID: 0}
     - target: {fileID: 95320324289322388, guid: 8e0f285c21cdcf14e8d5c06c57ba936b,
         type: 3}
