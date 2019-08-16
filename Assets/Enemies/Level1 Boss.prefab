@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4082416052387853424}
   - component: {fileID: 2059048429720128354}
   - component: {fileID: 5914574336779163157}
+  - component: {fileID: 3722513193948532460}
   m_Layer: 0
   m_Name: WeakSpot
   m_TagString: Untagged
@@ -127,6 +128,7 @@ MonoBehaviour:
   HitSound: {fileID: 8300000, guid: 1429ba6842657e14db43832b03cb73d6, type: 3}
   AudioPlayerPrefab: {fileID: 15029388523139994, guid: 1e75256cda3e364f793f55c7e163c61a,
     type: 3}
+  HitVolume: 1
 --- !u!61 &5914574336779163157
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,6 +155,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3722513193948532460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2399790518914550896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a185a9be322e6f35a677b272b6c1c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: WinningScene
+  Delay: 2
 --- !u!1 &5823635917866374883
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +435,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 2d2e1e569385d4be085a5a27e65c475d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ecf7ecca6d4103702ac51d039e193fbf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2e1e569385d4be085a5a27e65c475d, type: 3}
 --- !u!4 &4993328249775476156 stripped

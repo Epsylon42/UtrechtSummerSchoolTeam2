@@ -762,7 +762,7 @@ PrefabInstance:
     - target: {fileID: 3579156613773756382, guid: 3b109c52f678bdc6386dcd54d5ced7b9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3579156613773756382, guid: 3b109c52f678bdc6386dcd54d5ced7b9,
         type: 3}
@@ -943,18 +943,133 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
       propertyPath: barGradient.key1.r
-      value: 0
+      value: 0.9338569
       objectReference: {fileID: 0}
     - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
       propertyPath: barGradient.key1.g
-      value: 0.9528302
+      value: 0.990566
       objectReference: {fileID: 0}
     - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
       propertyPath: barGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key2.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key2.b
       value: 0.057363763
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.ctime1
+      value: 31226
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429798, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.m_NumColorKeys
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448154, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448154, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: m_Color.g
+      value: 0.018811034
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448154, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: colorMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key0.g
+      value: 0.9381461
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key0.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.ctime1
+      value: 65342
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key2.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key2.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key2.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.ctime2
+      value: 65342
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.m_NumColorKeys
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.ctime0
+      value: 65150
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key1.g
+      value: 0.018811034
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471602, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+      propertyPath: barGradient.key1.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34017cf12560c804bb2f669f00c7af91, type: 3}
+--- !u!1 &1104753141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132408, guid: 34017cf12560c804bb2f669f00c7af91,
+    type: 3}
+  m_PrefabInstance: {fileID: 1104753140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104753142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104753141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0dd1a637013fc71bdf15e58124cd8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Duration: 80
 --- !u!1 &1154397786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4704359276204763249, guid: 650af8cbaf4e5d95787a405aa1e746d7,
@@ -1371,7 +1486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817717301 stripped
 GameObject:
@@ -1424,7 +1539,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1976189056
 AudioSource:
@@ -1684,7 +1799,7 @@ PrefabInstance:
     - target: {fileID: 4704359276204763251, guid: 650af8cbaf4e5d95787a405aa1e746d7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4704359276204763251, guid: 650af8cbaf4e5d95787a405aa1e746d7,
         type: 3}

@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public AudioClip HitSound;
 
     public GameObject AudioPlayerPrefab;
+    public float HitVolume = 0.5f;
     private GameObject audioSource;
 
     public System.Action OnHealthBelowZero;
@@ -19,7 +20,10 @@ public class Health : MonoBehaviour
         if (HitSound != null && AudioPlayerPrefab != null && audioSource == null)
         {
             audioSource = Instantiate(AudioPlayerPrefab);
-            audioSource.GetComponent<AudioSource>().PlayOneShot(HitSound);
+            var source = audioSource.GetComponent<AudioSource>();
+            source.GetComponent<TimeToLive>().TimeLeft = HitSound.length;
+            source.volume = HitVolume;
+            source.PlayOneShot(HitSound);
         }
 
         CurrentHealth -= damage;

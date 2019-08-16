@@ -77,6 +77,7 @@ MonoBehaviour:
   HitSound: {fileID: 8300000, guid: b407b11420329cc4dbb66f8c7efd7682, type: 3}
   AudioPlayerPrefab: {fileID: 15029388523139994, guid: 1e75256cda3e364f793f55c7e163c61a,
     type: 3}
+  HitVolume: 0.5
 --- !u!114 &-6939253826069311440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamagePlayer: 1
-  DamagePerSecond: 10
+  DamagePerSecond: 30
 --- !u!114 &-2012154144406154700
 MonoBehaviour:
   m_ObjectHideFlags: 0
