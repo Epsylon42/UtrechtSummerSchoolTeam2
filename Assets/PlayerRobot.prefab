@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7074167766433193288}
   - component: {fileID: -669354620292352379}
   - component: {fileID: 1623865399997657064}
+  - component: {fileID: -3116008751656637391}
   m_Layer: 0
   m_Name: PlayerRobot
   m_TagString: Untagged
@@ -230,7 +231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
-  DestroySelfWhenBelowZero: 0
+  DestroySelfWhenBelowZero: 1
+  HitSound: {fileID: 0}
 --- !u!58 &1623865399997657064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -247,6 +249,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &-3116008751656637391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8340966031197260789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a185a9be322e6f35a677b272b6c1c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: LosingScene
+  Delay: 2
 --- !u!1001 &2119191874677304631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,10 +270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8049820856625767812}
     m_Modifications:
-    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
-      propertyPath: m_Name
-      value: robotSphere
-      objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -313,6 +325,10 @@ PrefabInstance:
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.z
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_Name
+      value: robotSphere
       objectReference: {fileID: 0}
     - target: {fileID: 95320324289322388, guid: 8e0f285c21cdcf14e8d5c06c57ba936b,
         type: 3}

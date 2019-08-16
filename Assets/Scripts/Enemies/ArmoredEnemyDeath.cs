@@ -6,7 +6,7 @@ public class ArmoredEnemyDeath : MonoBehaviour
 {
     void Start()
     {
-        GetComponentInChildren<Health>().OnHealthBelowZero = () => {
+        GetComponentInChildren<Health>().OnHealthBelowZero += () => {
             Destroy(gameObject);
         };
     }
