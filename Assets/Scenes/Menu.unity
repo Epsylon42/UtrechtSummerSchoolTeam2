@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -178,7 +178,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 414f17370cc64634d98b3f32ba79acfc, type: 3}
+    m_Font: {fileID: 12800000, guid: c2983c8dd28462745bf50f7a11ce5be0, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 622140141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ba9e1728307ee40ad0c752ad982ce6, type: 3}
+  m_Script: {fileID: 11500000, guid: eae7a6c38af0f084580fab01c0283a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &705507993
@@ -479,7 +479,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 414f17370cc64634d98b3f32ba79acfc, type: 3}
+    m_Font: {fileID: 12800000, guid: c2983c8dd28462745bf50f7a11ce5be0, type: 3}
     m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
@@ -558,7 +558,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 414f17370cc64634d98b3f32ba79acfc, type: 3}
+    m_Font: {fileID: 12800000, guid: c2983c8dd28462745bf50f7a11ce5be0, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -939,7 +939,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: bb1e6105e1495f643ad7466b1f0f11fb, type: 3}
+  m_Texture: {fileID: 2800000, guid: fff7d736f475e34448c66c996c03c832, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
